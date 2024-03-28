@@ -89,7 +89,12 @@ Neural Compressor from OpenVINO is employed to quantize the model, reducing its 
 
 When the model detects an anomaly, an alert is triggered, notifying the railway authorities for further investigation.
 
+## DEMO
 
+
+   OUTPUT1             |  OUTPUT2
+:-------------------------:|:-------------------------:
+![page1](https://github.com/devprashad/human-detection-in-railway-using-openvino/assets/110773439/555b459f-1698-4e1c-bb55-6ba466a3837a) | ![page2](https://github.com/devprashad/human-detection-in-railway-using-openvino/assets/110773439/102863bb-1ff7-4e21-9749-5384478ff5c9)
 
 ## Technology Stack
 
