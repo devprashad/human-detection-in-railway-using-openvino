@@ -6,7 +6,10 @@
 
 Address the critical challenge of railway track trespassing by designing and implementing an effective alert system capable of promptly detecting and notifying authorities about any unauthorized presence, thereby minimizing the risk of accidents and ensuring the safety of individuals and wildlife.
 
+
 ## Intel OneAPI AI Toolkit
+
+![diagram-ai-tools-ml-rwd png rendition intel web 720 405](https://github.com/devprashad/human-detection-in-railway-using-openvino/assets/110773439/c542edf5-714f-40cf-b1f0-c5b9960c1d48)
 
 Intel® oneAPI AI Toolkit is a powerful suite of tools and libraries designed to accelerate AI and machine learning workloads across various hardware platforms. It offers developers the flexibility to build, optimize, and deploy AI models efficiently on CPUs, GPUs, FPGAs, and other accelerators.
 
