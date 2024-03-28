@@ -32,6 +32,7 @@ Intel® oneAPI AI Toolkit is a powerful suite of tools and libraries designed to
 
 
 ## Intel oneAPI AI Toolkit with OpenVINO
+![openvino-architecture-intel](https://github.com/devprashad/human-detection-in-railway-using-openvino/assets/110773439/bdc56590-3e19-45b8-bbcc-46d681a07b12)
 
 Intel® oneAPI AI Toolkit, featuring OpenVINO, is a comprehensive toolkit designed to optimize and deploy deep learning models across various Intel hardware platforms, including CPUs, GPUs, VPUs (Video Processing Units), and FPGAs (Field-Programmable Gate Arrays). It provides a set of tools and libraries that enable developers to:
 
@@ -46,6 +47,7 @@ Intel® oneAPI AI Toolkit, featuring OpenVINO, is a comprehensive toolkit design
 
 
 ## Intel oneAPI AI Toolkit with Neural Compressor
+![neural-compressor-architecture-22-rwd png rendition intel web 1072 603](https://github.com/devprashad/human-detection-in-railway-using-openvino/assets/110773439/b399f364-e929-40c3-90c8-49909518480b)
 
 Intel® oneAPI AI Toolkit, featuring the Neural Compressor, is a framework that integrates with OpenVINO to further optimize deep learning models for deployment on resource-constrained devices. Its primary focus is on model quantization, a technique that reduces the model size and inference speed by representing the model weights with lower precision data types (e.g., from 32-bit floats to 8-bit integers). Neural Compressor offers different quantization algorithms and tools to:
 
@@ -87,13 +89,14 @@ Neural Compressor from OpenVINO is employed to quantize the model, reducing its 
 
 When the model detects an anomaly, an alert is triggered, notifying the railway authorities for further investigation.
 
+
+
 ## Technology Stack
 
-- OpenCV (for image/video processing)
-- TensorFlow/PyTorch (for deep learning model)
 - OpenVINO Toolkit (for model deployment and inference)
 - Neural Compressor (for model quantization)
-
+- Pytorch(YOLOv8) (for model creation)
+  
 ## Benefits
 
 - Improved safety and security on railway tracks by automatically detecting potential hazards.
@@ -108,9 +111,38 @@ When the model detects an anomaly, an alert is triggered, notifying the railway 
 
 ## Getting Started
 
-1. **Install dependencies:** Refer to the documentation for OpenCV, TensorFlow/PyTorch, OpenVINO, and Neural Compressor to install the required libraries.
-2. **Clone the repository:** Provide a link to your Git repository where the project code resides. You can use a service like GitHub to host your code.
-3. **Run the application:** Instruct users on how to execute the script to launch the alert system.
+1. **Install dependencies:**
+
+   Refer to the documentation for PyTorch, OpenVINO, and Neural Compressor to install the required libraries.
+
+   - **For PyTorch Library:**
+     ```
+     python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+     python -m pip install intel-extension-for-pytorch
+     python -m pip install oneccl_bind_pt --extra-index-url https://pytorch-extension.intel.com/release-whl/stable/cpu/us/ 
+     ```
+     More details can be found [here](https://intel.github.io/intel-extension-for-pytorch/cpu/latest/tutorials/installation.html).
+
+   - **For OpenVINO Library:**
+     ```
+     pip install openvino==2024.0.0
+     ```
+     More details can be found [here](https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/download.html?VERSION=v_2024_0_0&OP_SYSTEM=WINDOWS&DISTRIBUTION=PIP).
+
+   - **For Neural Compressor Library:**
+     ```
+     pip install "neural-compressor>=2.3" "transformers>=4.34.0"
+     ```
+      More details can be found [here](https://intel.github.io/neural-compressor/latest/docs/source/Welcome.html#installation).
+
+  
+3. **Clone the repository:** Provide a link to your Git repository where the project code resides. You can use a service like GitHub to host your code.
+
+```
+git clone https://github.com/devprashad/human-detection-in-railway-using-openvino.git
+
+```
+4. **Run the application:** Instruct users on how to execute the script to launch the alert system.
 
 ## Additional Information (Optional)
 
