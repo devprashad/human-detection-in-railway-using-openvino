@@ -95,6 +95,11 @@ When the model detects an anomaly, an alert is triggered, notifying the railway 
 :-------------------------:|:-------------------------:
 ![page1](https://github.com/devprashad/human-detection-in-railway-using-openvino/assets/110773439/555b459f-1698-4e1c-bb55-6ba466a3837a) | ![page2](https://github.com/devprashad/human-detection-in-railway-using-openvino/assets/110773439/102863bb-1ff7-4e21-9749-5384478ff5c9)
 
+## VIDEO DEMO
+
+
+[![Watch the video]](https://youtu.be/7k-VXP_ftp4?si=hrPhgfW_uCcZTeZV)
+
 
 ## Technology Stack
 
