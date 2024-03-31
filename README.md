@@ -89,6 +89,11 @@ Neural Compressor from OpenVINO is employed to quantize the model, reducing its 
 
 When the model detects an anomaly, an alert is triggered, notifying the railway authorities for further investigation.
 
+## DEMO
+
+   OUTPUT1             |  OUTPUT2
+:-------------------------:|:-------------------------:
+![page1](https://github.com/devprashad/human-detection-in-railway-using-openvino/assets/110773439/555b459f-1698-4e1c-bb55-6ba466a3837a) | ![page2](https://github.com/devprashad/human-detection-in-railway-using-openvino/assets/110773439/102863bb-1ff7-4e21-9749-5384478ff5c9)
 
 
 ## Technology Stack
@@ -105,9 +110,14 @@ When the model detects an anomaly, an alert is triggered, notifying the railway 
 
 ## Future Scope
 
-- Integration with existing railway infrastructure for seamless alert notification.
-- Exploration of more advanced anomaly detection models for improved accuracy.
-- Implementation of edge computing for on-device anomaly detection on trains.
+As we look ahead, there are several exciting avenues for further development and enhancement of our railway safety alert system. Here are some key areas we plan to explore:
+
+- **Integration with existing railway infrastructure:** We aim to seamlessly integrate our alert system with existing railway infrastructure to enable efficient and automated alert notification mechanisms. This integration will involve collaboration with railway authorities and the implementation of standardized communication protocols.
+
+- **Exploration of more advanced anomaly detection models:** While our current system achieves commendable accuracy in detecting anomalies on railway tracks, there is always room for improvement. We plan to explore and evaluate more advanced anomaly detection models, including state-of-the-art deep learning architectures and techniques. By leveraging cutting-edge research in this field, we aim to further enhance the accuracy and reliability of our system.
+
+- **Implementation of edge computing:** To enable on-device anomaly detection on trains, we plan to explore the implementation of edge computing techniques. By deploying lightweight inference models directly on-board trains, we can minimize reliance on external infrastructure and ensure real-time anomaly detection even in remote or disconnected environments. This approach will also reduce latency and enhance the responsiveness of our alert system.
+
 
 ## Getting Started
 
@@ -136,18 +146,17 @@ When the model detects an anomaly, an alert is triggered, notifying the railway 
       More details can be found [here](https://intel.github.io/neural-compressor/latest/docs/source/Welcome.html#installation).
 
   
-3. **Clone the repository:** Provide a link to your Git repository where the project code resides. You can use a service like GitHub to host your code.
+2. **Clone the repository:**
 
 ```
 git clone https://github.com/devprashad/human-detection-in-railway-using-openvino.git
 
 ```
-4. **Run the application:** Instruct users on how to execute the script to launch the alert system.
+3. **Run the application:** Instruct users on how to execute the script to launch the alert system.
 
-## Additional Information (Optional)
+## Conclusion
+**In Conclusion**, our project successfully leverages the power of **Intel's oneAPI AI Toolkit**, specifically **Neural Compressor** and **OpenVINO**, to develop a real-time alert system for enhanced railway safety. By implementing *computer vision* and *deep learning*, we have created a robust system capable of detecting anomalies on railway tracks in real-time.
 
-- Include any relevant resources, tutorials, or links to the documentation for the tools and libraries used in your project.
-- Mention any specific datasets or pre-trained models used for anomaly detection.
-- Provide screenshots or visualizations to illustrate the system's functionality.
+The optimized models, thanks to **Neural Compressor**, ensure efficient deployment on resource-constrained devices without compromising accuracy. **OpenVINO** facilitates seamless inference across various Intel hardware platforms, enabling real-time anomaly detection and timely alerts.
 
-By following this structure and filling in the specific details of your project, you can create a comprehensive and informative README file that effectively communicates the purpose, functionalities, and technical aspects of your railway alert system with OpenVINO and Neural Compressor.
+This project addresses a critical need for improved railway safety and paves the way for future advancements in anomaly detection across various infrastructure domains. Through continuous refinement and exploration of new technologies, we aim to create a *safer* and *more efficient* transportation system for everyone.
