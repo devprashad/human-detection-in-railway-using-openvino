@@ -168,6 +168,8 @@ In order to view the Open-vino model:
 python3 openvino.py
 ```
 This will enable the rendering of the view which is sources from the camera, in order to change the video, the source should be changed, which is fed in the model, instead of 0 which directs the source to camera, change it to path of the video.
+
+
 Before 
 ```
 result=ov_model(source=0,stream=True)
