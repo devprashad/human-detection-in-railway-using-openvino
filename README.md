@@ -187,3 +187,8 @@ result=ov_model(source='c\desktop\file1\file2',stream=True)
 The optimized models, thanks to **Neural Compressor**, ensure efficient deployment on resource-constrained devices without compromising accuracy. **OpenVINO** facilitates seamless inference across various Intel hardware platforms, enabling real-time anomaly detection and timely alerts.
 
 This project addresses a critical need for improved railway safety and paves the way for future advancements in anomaly detection across various infrastructure domains. Through continuous refinement and exploration of new technologies, we aim to create a *safer* and *more efficient* transportation system for everyone.
+
+Contributors:
+Navabhaarathi-navabhaarathiasokan@gmail.com
+Dev Prasad-cb.en.u4cse21626@cb.students.amrita.edu
+Vethis-vethisarun@gmail.com
