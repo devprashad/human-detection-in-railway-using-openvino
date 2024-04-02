@@ -103,6 +103,8 @@ When the model detects an anomaly, an alert is triggered, notifying the railway 
 - OpenVINO Toolkit (for model deployment and inference)
 - Neural Compressor (for model quantization)
 - Pytorch(YOLOv8) (for model creation)
+- Ultralytics (YOLO v8) (for model creation)
+  
   
 ## Benefits
 
@@ -131,7 +133,8 @@ As we look ahead, there are several exciting avenues for further development and
      ```
      python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
      python -m pip install intel-extension-for-pytorch
-     python -m pip install oneccl_bind_pt --extra-index-url https://pytorch-extension.intel.com/release-whl/stable/cpu/us/ 
+     python -m pip install oneccl_bind_pt --extra-index-url https://pytorch-extension.intel.com/release-whl/stable/cpu/us/
+     python -m pip install ultralytics 
      ```
      More details can be found [here](https://intel.github.io/intel-extension-for-pytorch/cpu/latest/tutorials/installation.html).
 
@@ -146,6 +149,7 @@ As we look ahead, there are several exciting avenues for further development and
      pip install "neural-compressor>=2.3" "transformers>=4.34.0"
      ```
       More details can be found [here](https://intel.github.io/neural-compressor/latest/docs/source/Welcome.html#installation).
+   
 
   
 2. **Clone the repository:**
@@ -155,6 +159,25 @@ git clone https://github.com/devprashad/human-detection-in-railway-using-openvin
 
 ```
 3. **Run the application:** Instruct users on how to execute the script to launch the alert system.
+In order to view the YOLO v8 Model which is trained:
+```
+python3 trainmodel.py
+````
+In order to view the Open-vino model:
+```
+python3 openvino.py
+```
+This will enable the rendering of the view which is sources from the camera, in order to change the video, the source should be changed, which is fed in the model, instead of 0 which directs the source to camera, change it to path of the video.
+Before 
+```
+result=ov_model(source=0,stream=True)
+```
+After 
+```
+result=ov_model(source='c\desktop\file1\file2',stream=True)
+```
+
+
 
 ## Conclusion
 **In Conclusion**, our project successfully leverages the power of **Intel's oneAPI AI Toolkit**, specifically **Neural Compressor** and **OpenVINO**, to develop a real-time alert system for enhanced railway safety. By implementing *computer vision* and *deep learning*, we have created a robust system capable of detecting anomalies on railway tracks in real-time.
