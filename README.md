@@ -178,6 +178,13 @@ After
 ```
 result=ov_model(source='c\desktop\file1\file2',stream=True)
 ```
+##Openvino Performance:
+![Benchmark](https://github.com/nb0309/human-detection-in-railway-using-openvino/blob/main/Metrics/WhatsApp%20Image%202024-04-04%20at%2010.44.55%20PM.jpeg?raw=true)
+In order to run the benchmark comparison between the two model:
+```
+python3 comparison.py
+```
+In the above code, you might want to change the source of both the models to feed the required video that you want to see the benchmarks on.
 
 
 
@@ -189,6 +196,6 @@ The optimized models, thanks to **Neural Compressor**, ensure efficient deployme
 This project addresses a critical need for improved railway safety and paves the way for future advancements in anomaly detection across various infrastructure domains. Through continuous refinement and exploration of new technologies, we aim to create a *safer* and *more efficient* transportation system for everyone.
 
 Contributors:
-Navabhaarathi-navabhaarathiasokan@gmail.com
-Dev Prasad-cb.en.u4cse21626@cb.students.amrita.edu
-Vethis-vethisarun@gmail.com
+Navabhaarathi - navabhaarathiasokan@gmail.com
+Dev Prasad - cb.en.u4cse21626@cb.students.amrita.edu
+Vethis - vethisarun@gmail.com
