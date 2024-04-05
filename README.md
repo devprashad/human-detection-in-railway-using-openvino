@@ -199,5 +199,5 @@ This project addresses a critical need for improved railway safety and paves the
 
 Contributors:
 Navabhaarathi - navabhaarathiasokan@gmail.com
-Dev Prasad - cb.en.u4cse21626@cb.students.amrita.edu
+Dev Prashad - devprashadk01@gmail.com
 Vethis - vethisarun@gmail.com
