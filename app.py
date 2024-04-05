@@ -6,7 +6,7 @@ import shutil
 
 app = Flask(__name__, template_folder='templates', static_folder='staticFiles')
 
-model = YOLO('yolov8n.pt', task='detect')
+model = YOLO('yolov8n_openvino_model', task='detect')
 
 
 def convert_avi_to_mp4(avi_file, mp4_file):
@@ -86,8 +86,7 @@ def upload():
     shutil.rmtree('runs/detect')
     return 'Error uploading video'
 
-import glob
-
+import glob 
 @app.route('/show_alert', methods=['GET'])
 def show_alert():
     # Get the list of all prediction directories
