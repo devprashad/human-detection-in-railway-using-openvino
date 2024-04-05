@@ -45,22 +45,6 @@ Intel® oneAPI AI Toolkit, featuring OpenVINO, is a comprehensive toolkit design
 3. **Performance Optimization**: OpenVINO offers various techniques to fine-tune models for specific hardware targets. This can involve techniques like quantization (reducing the number of bits used to represent weights), pruning (removing redundant connections), and kernel fusion (combining multiple operations into a single one).
 
 
-
-## Intel oneAPI AI Toolkit with Neural Compressor
-![neural-compressor-architecture-22-rwd png rendition intel web 1072 603](https://github.com/devprashad/human-detection-in-railway-using-openvino/assets/110773439/b399f364-e929-40c3-90c8-49909518480b)
-
-Intel® oneAPI AI Toolkit, featuring the Neural Compressor, is a framework that integrates with OpenVINO to further optimize deep learning models for deployment on resource-constrained devices. Its primary focus is on model quantization, a technique that reduces the model size and inference speed by representing the model weights with lower precision data types (e.g., from 32-bit floats to 8-bit integers). Neural Compressor offers different quantization algorithms and tools to:
-
-### Key Features
- 
-1. **Quantize Pre-Trained Models**: Apply quantization techniques to pre-trained models from various frameworks. It helps find the optimal quantization strategy while maintaining acceptable accuracy loss.
-
-2. **Quantization-Aware Training (QAT)**: This technique allows you to quantize a model during the training process itself. It helps the model adapt to the lower precision format, potentially leading to better post-training quantization results.
-
-3. **Co-design with Hardware**: Neural Compressor can consider hardware capabilities during the optimization process. This ensures the quantized model is well-suited for the target hardware platform.
-
-
-
 ### How to Get Started:
 To get started with Intel oneAPI AI Toolkit, visit the [official documentation](https://software.intel.com/content/www/us/en/develop/tools/oneapi/ai-analytics-toolkit.html) and follow the installation instructions. You can also explore tutorials and examples to learn more about the toolkit's capabilities and how to use it in your projects.
 
@@ -81,10 +65,6 @@ A pre-trained deep learning model, potentially fine-tuned on a railway image dat
 
 The trained model is optimized and deployed using OpenVINO for efficient inference on hardware accelerators like CPUs or VPUs.
 
-### Neural Compressor Quantization
-
-Neural Compressor from OpenVINO is employed to quantize the model, reducing its size and improving inference speed on resource-constrained devices.
-
 ### Alert Generation
 
 When the model detects an anomaly, an alert is triggered, notifying the railway authorities for further investigation.
@@ -101,7 +81,6 @@ When the model detects an anomaly, an alert is triggered, notifying the railway 
 ## Technology Stack
 
 - OpenVINO Toolkit (for model deployment and inference)
-- Neural Compressor (for model quantization)
 - Pytorch(YOLOv8) (for model creation)
 - Ultralytics (YOLO v8) (for model creation)
   
@@ -178,24 +157,26 @@ After
 ```
 result=ov_model(source='c\desktop\file1\file2',stream=True)
 ```
-##Openvino Performance:
+## Openvino Performance:
 ![Benchmark](https://github.com/nb0309/human-detection-in-railway-using-openvino/blob/main/Metrics/WhatsApp%20Image%202024-04-04%20at%2010.44.55%20PM.jpeg?raw=true)
 In order to run the benchmark comparison between the two model:
+
 ```
 python3 comparison.py
 ```
+
 In the above code, you might want to change the source of both the models to feed the required video that you want to see the benchmarks on.
 
 
 
 ## Conclusion
-**In Conclusion**, our project successfully leverages the power of **Intel's oneAPI AI Toolkit**, specifically **Neural Compressor** and **OpenVINO**, to develop a real-time alert system for enhanced railway safety. By implementing *computer vision* and *deep learning*, we have created a robust system capable of detecting anomalies on railway tracks in real-time.
+**In Conclusion**, our project successfully leverages the power of **Intel's oneAPI AI Toolkit**, specifically **OpenVINO**, to develop a real-time alert system for enhanced railway safety. By implementing *computer vision* and *deep learning*, we have created a robust system capable of detecting anomalies on railway tracks in real-time.
 
-The optimized models, thanks to **Neural Compressor**, ensure efficient deployment on resource-constrained devices without compromising accuracy. **OpenVINO** facilitates seamless inference across various Intel hardware platforms, enabling real-time anomaly detection and timely alerts.
+**OpenVINO** facilitates seamless inference across various Intel hardware platforms, enabling real-time anomaly detection and timely alerts.
 
 This project addresses a critical need for improved railway safety and paves the way for future advancements in anomaly detection across various infrastructure domains. Through continuous refinement and exploration of new technologies, we aim to create a *safer* and *more efficient* transportation system for everyone.
 
 Contributors:
 Navabhaarathi - navabhaarathiasokan@gmail.com
-Dev Prasad - cb.en.u4cse21626@cb.students.amrita.edu
+Dev Prashad - devprashadk01@gmail.com
 Vethis - vethisarun@gmail.com
