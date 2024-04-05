@@ -85,19 +85,17 @@ def upload():
         return redirect(url_for('serve_video', filename='result.mp4'))
     shutil.rmtree('runs/detect')
     return 'Error uploading video'
+
 import glob
 
 @app.route('/show_alert', methods=['GET'])
 def show_alert():
     # Get the list of all prediction directories
     prediction_dirs = glob.glob('runs/detect/predict*')
-    
     # Sort the directories by creation time to get the latest one
     latest_prediction_dir = max(prediction_dirs, key=os.path.getctime)
-    
     # Get the path of the latest video file in the latest prediction directory
     latest_video_path = os.path.join(latest_prediction_dir, 'video.avi')
-    
     return render_template('alert.html', video_path=url_for('static', filename=latest_video_path))
 
 @app.route('/output')
