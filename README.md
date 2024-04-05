@@ -178,12 +178,14 @@ After
 ```
 result=ov_model(source='c\desktop\file1\file2',stream=True)
 ```
-##Openvino Performance:
+## Openvino Performance:
 ![Benchmark](https://github.com/nb0309/human-detection-in-railway-using-openvino/blob/main/Metrics/WhatsApp%20Image%202024-04-04%20at%2010.44.55%20PM.jpeg?raw=true)
 In order to run the benchmark comparison between the two model:
+
 ```
 python3 comparison.py
 ```
+
 In the above code, you might want to change the source of both the models to feed the required video that you want to see the benchmarks on.
 
 
