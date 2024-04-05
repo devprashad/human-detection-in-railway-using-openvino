@@ -81,7 +81,6 @@ When the model detects an anomaly, an alert is triggered, notifying the railway 
 ## Technology Stack
 
 - OpenVINO Toolkit (for model deployment and inference)
-- Neural Compressor (for model quantization)
 - Pytorch(YOLOv8) (for model creation)
 - Ultralytics (YOLO v8) (for model creation)
   
